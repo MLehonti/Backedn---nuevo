@@ -102,7 +102,7 @@ public class CarritoDeComprasController {
                     // Obtener la URL de la imagen desde el controlador de productos
                     String[] partesImagen = item.getProducto().getImagenUrl().split("/");
                     String nombreArchivo = partesImagen[partesImagen.length - 1];
-                    productoInfo.put("imagenUrl", "http://localhost:8080/api/productos/imagen/" + nombreArchivo);
+                    productoInfo.put("imagenUrl", "https://backedn-nuevo.onrender.com/api/productos/imagen/" + nombreArchivo);
 
                     return productoInfo;
                 })
